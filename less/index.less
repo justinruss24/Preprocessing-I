@@ -50,10 +50,148 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+@mainfont: 'Quicksand', sans-serif;
+@main-background: #E2E0DC;
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+body {
+	font-family: @mainfont;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.2rem;
+	font-style: italic;
+}
+header {
+	display: flex;
+	justify-content: center;
+	background-color: @main-background;
+	border-bottom: 2px solid black;
+	.head-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 2% 8%;
+		margin: 1%;
+		background-color: white;
+		h1 {
+			font-size: 2rem;
+			text-transform: uppercase;
+		}/*closes h1*/
+	}/*closes the div*/
+}/*closes the header*/
+img {
+	object-fit: contain;
+	padding: 0;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	border-radius: 80%;
+}
+.sec1-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 1%;
+	align-items: center;
+	#profile {
+		h2 {
+			padding-bottom: 4%;
+		}/*closes the h2 div in profile*/
+		p {
+			padding-top: 2%;
+		}/*closes the p div in profile*/
+	}/*closes the profile div*/
+}
+.left-info, .mid-info, .right-info {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: 1%;
+	padding: 1%;
+}
+
+.right-info p {
+	padding-bottom: 10%;
+}
+
+.sec2-container {
+	background-color: @main-background;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+	margin: 1%;
+	h2 {
+		padding-bottom: 4%;
+	}
+	p {
+		padding-bottom: 2%;
+		margin-bottom: 3%;
+	}
+}
+
+#education, #skills {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	margin: 1%;
+	padding: 1%;
+	justify-content: space-around;
+}
+
+.sec3-container {
+	display: flex;
+	margin: 1%;
+}
+#experience {
+	display:flex;
+	padding: 1%;
+	margin: 1%;
+	width: 100%;
+	flex-direction: column;
+}
+
+#job1, #job2, #job3 {
+	display: flex;
+	flex-direction: row;
+	padding: 2% 0;
+	justify-content: space-between;
+	.years {
+		width: 5%;
+	}
+	.job-info {
+		width: 40%;
+	}
+	.details {
+		width: 45%;
+	}
+}
+
+.nav-container {
+	display: flex;
+	width: 100%;
+	background-color: @main-background; 
+	justify-content: center;
+	border-top: 2px solid black;
+	#navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 50%;
+		margin: 1%;
+		a {
+			color: black;
+			text-decoration: none;
+		}/*closes the anchor tags in nav container*/
+	}/*closes the navbar css*/
+}/*closes the nav container*/

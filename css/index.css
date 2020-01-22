@@ -1,1 +1,284 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #E2E0DC;
+  border-bottom: 2px solid black;
+  /*closes the div*/
+}
+header .head-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 8%;
+  margin: 1%;
+  background-color: white;
+  /*closes h1*/
+}
+header .head-container h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/*closes the header*/
+img {
+  object-fit: contain;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 80%;
+}
+.sec1-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  align-items: center;
+  /*closes the profile div*/
+}
+.sec1-container #profile {
+  /*closes the h2 div in profile*/
+  /*closes the p div in profile*/
+}
+.sec1-container #profile h2 {
+  padding-bottom: 4%;
+}
+.sec1-container #profile p {
+  padding-top: 2%;
+}
+.left-info,
+.mid-info,
+.right-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1%;
+  padding: 1%;
+}
+.right-info p {
+  padding-bottom: 10%;
+}
+.sec2-container {
+  background-color: #E2E0DC;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 1%;
+}
+.sec2-container h2 {
+  padding-bottom: 4%;
+}
+.sec2-container p {
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+}
+#education,
+#skills {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 1%;
+  padding: 1%;
+  justify-content: space-around;
+}
+.sec3-container {
+  display: flex;
+  margin: 1%;
+}
+#experience {
+  display: flex;
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  flex-direction: column;
+}
+#job1,
+#job2,
+#job3 {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 0;
+  justify-content: space-between;
+}
+#job1 .years,
+#job2 .years,
+#job3 .years {
+  width: 5%;
+}
+#job1 .job-info,
+#job2 .job-info,
+#job3 .job-info {
+  width: 40%;
+}
+#job1 .details,
+#job2 .details,
+#job3 .details {
+  width: 45%;
+}
+.nav-container {
+  display: flex;
+  width: 100%;
+  background-color: #E2E0DC;
+  justify-content: center;
+  border-top: 2px solid black;
+  /*closes the navbar css*/
+}
+.nav-container #navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1%;
+  /*closes the anchor tags in nav container*/
+}
+.nav-container #navbar a {
+  color: black;
+  text-decoration: none;
+}
+/*closes the nav container*/
