@@ -106,6 +106,7 @@ section {
 }
 body {
   line-height: 1;
+  width: 100%;
 }
 ol,
 ul {
@@ -126,36 +127,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   height: 100%;
 }
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Quicksand', sans-serif;
+  margin: 1%;
+  width: 100%;
 }
 h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-h3 {
-  font-size: 1.2rem;
-  font-style: italic;
-}
+/*closes the h2*/
 header {
   display: flex;
   justify-content: center;
   background-color: #E2E0DC;
   border-bottom: 2px solid black;
   /*closes the div*/
+  /*closes the h3*/
 }
 header .head-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 2% 8%;
   margin: 1%;
@@ -166,21 +167,22 @@ header .head-container h1 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-/*closes the header*/
-img {
-  object-fit: contain;
-  padding: 0;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border-radius: 80%;
+header h3 {
+  font-size: 1.2rem;
+  font-style: italic;
 }
+/*closes the header*/
 .sec1-container {
+  width: 100%;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
   margin: 1%;
   align-items: center;
   /*closes the profile div*/
+  /*closes the info styles*/
+  /*closes the right info*/
+  /*closes the image*/
 }
 .sec1-container #profile {
   /*closes the h2 div in profile*/
@@ -191,25 +193,39 @@ img {
 }
 .sec1-container #profile p {
   padding-top: 2%;
+  width: 100%;
+  font-size: 1rem;
 }
-.left-info,
-.mid-info,
-.right-info {
+.sec1-container .left-info,
+.sec1-container .mid-info,
+.sec1-container .right-info {
   display: flex;
   flex-direction: column;
   width: 30%;
   margin: 1%;
-  padding: 1%;
 }
-.right-info p {
+.sec1-container .right-info p {
   padding-bottom: 10%;
 }
+.sec1-container img {
+  object-fit: contain;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 80%;
+}
+/*closes the sec1 container*/
 .sec2-container {
+  width: 100%;
   background-color: #E2E0DC;
   display: flex;
   justify-content: center;
   border: 2px solid black;
   margin: 1%;
+  /*ends h2 style in container*/
+  /*ends the p style in container*/
+  /*closes education/skills style in container*/
 }
 .sec2-container h2 {
   padding-bottom: 4%;
@@ -218,8 +234,8 @@ img {
   padding-bottom: 2%;
   margin-bottom: 3%;
 }
-#education,
-#skills {
+.sec2-container #education,
+.sec2-container #skills {
   display: flex;
   flex-direction: column;
   width: 48%;
@@ -227,40 +243,45 @@ img {
   padding: 1%;
   justify-content: space-around;
 }
+/*closes the sec2 container*/
 .sec3-container {
+  width: 100%;
   display: flex;
   margin: 1%;
+  /*closes the experience div*/
+  /*closes jobs*/
 }
-#experience {
+.sec3-container #experience {
   display: flex;
+  flex-direction: column;
   padding: 1%;
   margin: 1%;
   width: 100%;
-  flex-direction: column;
 }
-#job1,
-#job2,
-#job3 {
+.sec3-container #job1,
+.sec3-container #job2,
+.sec3-container #job3 {
   display: flex;
   flex-direction: row;
   padding: 2% 0;
   justify-content: space-between;
 }
-#job1 .years,
-#job2 .years,
-#job3 .years {
+.sec3-container #job1 .years,
+.sec3-container #job2 .years,
+.sec3-container #job3 .years {
   width: 5%;
 }
-#job1 .job-info,
-#job2 .job-info,
-#job3 .job-info {
+.sec3-container #job1 .job-info,
+.sec3-container #job2 .job-info,
+.sec3-container #job3 .job-info {
   width: 40%;
 }
-#job1 .details,
-#job2 .details,
-#job3 .details {
+.sec3-container #job1 .details,
+.sec3-container #job2 .details,
+.sec3-container #job3 .details {
   width: 45%;
 }
+/*closes the sec3 container*/
 .nav-container {
   display: flex;
   width: 100%;
@@ -282,3 +303,12 @@ img {
   text-decoration: none;
 }
 /*closes the nav container*/
+@media (max-width: 500px) {
+  .sec1-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec1-container .left-info {
+    display: none;
+  }
+}
